@@ -1,1 +1,1 @@
-# StarTravelSFML
+# Star

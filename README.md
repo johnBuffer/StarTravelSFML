@@ -1,7 +1,7 @@
 # StarTravel
 
 To compile, the following commands can be used
-```shell
+```bash
 mkdir build
 cd build
 cmake ..

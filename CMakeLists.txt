@@ -10,6 +10,7 @@ FetchContent_Declare(SFML
     GIT_TAG 2.6.x)
 FetchContent_MakeAvailable(SFML)
 
+# Automatically adds all cpp files contained in the src directory
 file(GLOB_RECURSE source_files
     "src/*.cpp"
 )

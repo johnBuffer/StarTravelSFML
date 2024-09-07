@@ -47,16 +47,16 @@ std::vector<Star> createStars(uint32_t count, float scale)
 }
 
 
-float fastPow(float x, uint32_t p)
-{
-    float res = 1.0f;
+float fastpow(float x, uint32_t p) {
+	float result = 1.0f;
 
-    for (uint32_t i{p}; i--;)
-    {
-        res *= x;
-    }
+	if (p % 2 == 1) {
+		result *= x;
+	}
+	x *= x;
+	p /= 2;
 
-    return res;
+	return result;
 }
 
 

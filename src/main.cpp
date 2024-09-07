@@ -49,14 +49,16 @@ std::vector<Star> createStars(uint32_t count, float scale)
 
 float fastpow(float x, uint32_t p) {
 	float result = 1.0f;
+	
+	//x^2p  = (x*x)*(x^p)
 
-	if (p % 2 == 1) {
-		result *= x;
+	if (p % 2 == 1) {   
+		result *= x;   // x^2p + 1 = x^2p * x
 	}
 	x *= x;
 	p /= 2;
 
-	return result;
+	return result;    // timecomplexity of O(log(n)) yayyyyy :)))
 }
 
 
